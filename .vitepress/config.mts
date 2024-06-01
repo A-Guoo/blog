@@ -10,7 +10,7 @@ export default defineConfig({
 
   // 设置元数据
   head: [
-    ["link", { rel: "icon", type: "image/png", href: "/favicon.png" }], // favicon
+    // ["link", { rel: "icon", type: "image/png", href: "/favicon.png" }], // favicon
     [
       "meta",
       {
@@ -20,16 +20,22 @@ export default defineConfig({
       },
     ],
     ["meta", { name: "keywords", content: "" }],
+    [
+      "script",
+      {
+        content:
+          "window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };",
+      },
+    ],
+    ["script", { src: "/_vercel/insights/script.js", defer: true }],
   ],
 
   // 主题配置
   themeConfig: {
-    logo: { src: "/favicon.png", width: 24, height: 24 },
     // 大纲设置
     outline: [2, 5], // 识别<h2>-<h4>的标题
     outlineTitle: "本页目录",
     lastUpdatedText: "上次更新",
-    author: "alilis",
     // 开启本地搜索
     search: {
       provider: "local",
@@ -49,7 +55,7 @@ export default defineConfig({
       next: "下一页",
     },
     // 社交链接
-    socialLinks: [{ icon: "github", link: "https://github.com/your-name" }],
+    socialLinks: [{ icon: "github", link: "https://github.com/LinxieMuxing" }],
   },
 
   vite: {},
