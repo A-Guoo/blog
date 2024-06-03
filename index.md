@@ -3,23 +3,23 @@
 layout: home
 
 hero:
-  name: "My Awesome Project"
-  text: "A VitePress Site"
-  tagline: My great project tagline
+  name: "Blog"
+  text: "AGuo的全面发展"
+  tagline: Stay hungry. Stay foolish.
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: 快速开始
+      link: /start
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: GitHub
+      link: https://github.com/LinxieMuxing
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: hello World
+    details: Learn to output 'hello world' in various programming languages
+  - title: api caller
+    details: Free access to various APIs
+  - title: orz for big shot
+    details: Seek advice from experts in various fields
 ---
 
