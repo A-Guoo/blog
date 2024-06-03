@@ -1,16 +1,16 @@
 import { defineConfig } from "vitepress";
 
 export default defineConfig({
-  title: "站点标题",
-  description: "站点描述",
+  title: "blog",
+  description: "The blog written by AGuo.",
   lang: "zh-CH",
 
   lastUpdated: true, // 是否展示更新时间
-  cleanUrls: false, // URL 中删除尾随的 .html
+  cleanUrls: true, // URL 中删除尾随的 .html
 
   // 设置元数据
   head: [
-    // ["link", { rel: "icon", type: "image/png", href: "/favicon.png" }], // favicon
+    ["link", { rel: "icon", type: "image/png", href: "https://h5static.dewucdn.com/sociality/static/10131855/20240603-c8428b0f5e52253b-w533h400.webp" }], // favicon
     [
       "meta",
       {
@@ -44,10 +44,9 @@ export default defineConfig({
     nav: [{ text: "首页", link: "index" }],
     // 文件目录
     sidebar: [],
-
     footer: {
       message: "Released under the MIT License.",
-      copyright: `Copyright © 2023 Alilis`,
+      copyright: `Copyright © 2024 AGuo`,
     },
 
     docFooter: {
