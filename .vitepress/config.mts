@@ -37,7 +37,7 @@ export default defineConfig({
       'https://dev.weixin.qq.com/platform-console/proxy/assets/tel/px.min.js',
   ];
   const param = {
-      maskMode: 'all-mask', // 隐私策略, all-mask 或 no-mask, 详见：https://dev.weixin.qq.com/docs/analysis/sdk/docs.html
+      maskMode: 'no-mask', // 隐私策略, all-mask 或 no-mask, 详见：https://dev.weixin.qq.com/docs/analysis/sdk/docs.html
       recordCanvas: false,  // 若要采集canvas, 设为true
       projectId: 'wxfc09df2cbabfe14d-hIKdQNKAk-iho_Ya', // 项目 ID，需替换为体验分析项目 ID
       iframe: false, // 是否采集 iframe 页面
