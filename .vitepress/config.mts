@@ -10,7 +10,14 @@ export default defineConfig({
 
   // 设置元数据
   head: [
-    ["link", { rel: "icon", type: "image/png", href: "https://h5static.dewucdn.com/sociality/static/10131855/20240603-c8428b0f5e52253b-w533h400.webp" }], // favicon
+    [
+      "link",
+      {
+        rel: "icon",
+        type: "image/png",
+        href: "./icon.webp",
+      },
+    ], // favicon
     [
       "meta",
       {
@@ -28,7 +35,10 @@ export default defineConfig({
       },
     ],
     ["script", { src: "/_vercel/insights/script.js", defer: true }],
-    ["script", {}, `\
+    [
+      "script",
+      {},
+      `\
 (function () {
   'use strict';
 
@@ -72,7 +82,8 @@ export default defineConfig({
   main();
 
 })();
-`]
+`,
+    ],
   ],
 
   // 主题配置
@@ -85,10 +96,56 @@ export default defineConfig({
     search: {
       provider: "local",
     },
+    logo: "./icon.webp",
     // 导航页
     nav: [{ text: "首页", link: "index" }],
     // 文件目录
-    sidebar: [],
+    sidebar: [
+      {
+        text: "新的开始",
+        link: "/start.md",
+      },
+      {
+        text: "FLAG集合",
+        collapsed: true,
+        items: [{ text: "2025", link: "/flags/2025.md" }],
+      },
+      {
+        text: "生活",
+        collapsed: true,
+        items: [],
+      },
+      {
+        text: "阅读",
+        collapsed: true,
+        items: [{ text: "《参与感》", link: "/books/《参与感》.md" }],
+      },
+      {
+        text: "哲学",
+        collapsed: true,
+        items: [],
+      },
+      {
+        text: "音乐",
+        collapsed: true,
+        items: [],
+      },
+      {
+        text: "创业",
+        collapsed: true,
+        items: [
+          {
+            text: "AI创业失败记",
+            link: "/entrepreneurial/AI创业失败记.md",
+          },
+        ],
+      },
+      {
+        text: "理财",
+        collapsed: true,
+        items: [],
+      },
+    ],
     footer: {
       message: "Released under the MIT License.",
       copyright: `Copyright © 2024 AGuo`,
@@ -99,7 +156,7 @@ export default defineConfig({
       next: "下一页",
     },
     // 社交链接
-    socialLinks: [{ icon: "github", link: "https://github.com/LinxieMuxing/blog" }],
+    socialLinks: [{ icon: "github", link: "https://github.com/A-Guoo/blog" }],
   },
 
   vite: {},

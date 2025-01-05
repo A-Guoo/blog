@@ -12,7 +12,7 @@ hero:
       link: /start
     - theme: alt
       text: GitHub
-      link: https://github.com/LinxieMuxing
+      link: https://github.com/A-Guoo
 
 features:
   - title: hello World
@@ -22,4 +22,3 @@ features:
   - title: orz for big shot
     details: Seek advice from experts in various fields
 ---
-
