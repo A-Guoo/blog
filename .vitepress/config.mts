@@ -99,6 +99,10 @@ export default defineConfig({
     logo: "./icon.webp",
     // 导航页
     nav: [{ text: "首页", link: "index" }],
+    editLink: {
+      pattern: 'https://github.com/A-Guoo/blog/edit/master/:path',
+      text: 'Edit this page on GitHub'
+    },
     // 文件目录
     sidebar: [
       {
@@ -147,7 +151,7 @@ export default defineConfig({
       },
     ],
     footer: {
-      message: "Released under the MIT License.",
+      message: "<p>备案号：<a href="http://beian.miit.gov.cn/" target="_blank">鄂ICP备2025089824号</a></p>",
       copyright: `Copyright © 2024 AGuo`,
     },
 
