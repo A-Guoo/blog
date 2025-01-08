@@ -151,7 +151,7 @@ export default defineConfig({
       },
     ],
     footer: {
-      message: "<p>备案号：<a href="http://beian.miit.gov.cn/" target="_blank">鄂ICP备2025089824号</a></p>",
+      message: '<p>备案号：<a href="http://beian.miit.gov.cn/" target="_blank">鄂ICP备2025089824号</a></p>',
       copyright: `Copyright © 2024 AGuo`,
     },
 
